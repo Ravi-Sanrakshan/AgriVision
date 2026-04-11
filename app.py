@@ -136,8 +136,8 @@ def main():
         
         uploaded_file = st.file_uploader(
             "Choose an image of a plant leaf",
-            type=['jpg', 'jpeg', 'png'],
-            help="Upload a clear, well-lit photo of a single leaf"
+            type=['jpg', 'jpeg'],
+            help="Upload a clear, well-lit photo of a single leaf, on a WHITE background and AVOID PNG. PNG support has not yet been rolled out."
         )
         
         if uploaded_file is not None:
@@ -225,7 +225,7 @@ def main():
             st.markdown('</div>', unsafe_allow_html=True)
             
             if confidence_pct < 70:
-                st.warning("⚠️ Low confidence detection. Please consult an agricultural expert for confirmation.")
+                st.warning("⚠️ Low confidence detection. Please make sure that the photo was clicked with the leaf on a WHITE background. Otherwise, please consult an agricultural expert for help.")
             
             if st.button("📄 Download Report", use_container_width=True):
                 report = f"""
