@@ -227,8 +227,7 @@ def main():
             if confidence_pct < 70:
                 st.warning("⚠️ Low confidence detection. Please make sure that the photo was clicked with the leaf on a WHITE background. Otherwise, please consult an agricultural expert for help.")
             
-            if st.button("📄 Download Report", use_container_width=True):
-                report = f"""
+            
 AGRIVISION DISEASE DIAGNOSIS REPORT
 ====================================
 
