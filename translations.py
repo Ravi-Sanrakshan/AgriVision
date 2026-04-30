@@ -1,8 +1,8 @@
 # translations.py
 
 # A dictionary containing translations for the common strings used in the application
-# Named TRANSLATIONS in uppercase to match your app.py import
-translations = {
+# We use TRANSLATIONS in uppercase to match your app.py imports and logic
+TRANSLATIONS = {
     'en': {
         'subtitle': 'AI-Powered Plant Health Analysis',
         'about_title': 'About AgriVision',
@@ -72,6 +72,7 @@ def get_translation(key, lang='en'):
     """
     Get the translation for a given key based on the language code.
     """
+    # Fixed: Now matches the uppercase TRANSLATIONS variable above
     if lang in TRANSLATIONS:
         return TRANSLATIONS[lang].get(key, key)
     return key
