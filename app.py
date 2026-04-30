@@ -98,9 +98,15 @@ def main():
             chem = [translate_text(i, l) for i in info['chemical_treatment']]
             prev = [translate_text(i, l) for i in info['prevention']]
 
-            with tb[0]: [st.write(f"🌱 {i}") for i in org]
-            with tb[1]: [st.write(f"🧪 {i}") for i in chem]
-            with tb[2]: [st.write(f"🛡️ {i}") for i in prev]
+            with tb[0]:
+                for i in org:
+                    st.write(f"🌱 {i}")
+            with tb[1]:
+                for i in chem:
+                    st.write(f"🧪 {i}")
+            with tb[2]:
+                for i in prev:
+                    st.write(f"🛡️ {i}")
 
             # DETAILED DOWNLOADABLE REPORT
             full_report = f"""
