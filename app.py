@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 import json
 import os
-from translations import TRANSLATIONS, get_translation
+from translations import translations, get_translation
 
 st.set_page_config(
     page_title="AgriVision - Plant Disease Detection",
