@@ -2,7 +2,7 @@
 
 # A dictionary containing translations for the common strings used in the application
 # Named TRANSLATIONS in uppercase to match your app.py import
-TRANSLATIONS = {
+translations = {
     'en': {
         'subtitle': 'AI-Powered Plant Health Analysis',
         'about_title': 'About AgriVision',
