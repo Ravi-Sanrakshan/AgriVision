@@ -60,7 +60,7 @@ def main():
 
     with col1:
         st.header(t('upload_title'))
-        uploaded_file = st.file_uploader(t('upload_description'), type=['jpg', 'jpeg', 'png'])
+        uploaded_file = st.file_uploader(t('upload_description'), type=['jpg', 'jpeg'])
         
         if uploaded_file:
             image = Image.open(uploaded_file)
