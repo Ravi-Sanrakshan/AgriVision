@@ -55,6 +55,15 @@ def main():
         st.divider()
         st.header(t('model_info_title'))
         st.info(f"🎯 {t('accuracy')}: 98.5%\n\n📦 {t('classes')}: 38\n\n💾 {t('model_size')}: 2.7MB")
+            # Footer with link to AgriFusion Wiki-Calc
+        st.divider()
+        st.markdown(
+        '<div style="text-align:center; margin-top:2rem;">'
+        '<p style="font-size:0.9rem; color:#666;">Visit our resource: '
+        '<a href="https://ravi-sanrakshan.github.io/AgriFusion-Wiki-Calc/" target="_blank" style="color:#2E7D32; text-decoration:none; font-weight:bold;">AgriFusion Wiki-Calc</a></p>'
+        '</div>',
+        unsafe_allow_html=True
+    )
 
     col1, col2 = st.columns([1, 1])
 
