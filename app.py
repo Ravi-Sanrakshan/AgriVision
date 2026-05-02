@@ -59,7 +59,7 @@ def main():
         st.divider()
         st.markdown(
         '<div style="text-align:center; margin-top:2rem;">'
-        '<p style="font-size:0.9rem; color:#666;">Visit our resource: '
+        '<p style="font-size:0.9rem; color:#666;">Visit our resource. Please click the photo on white bg and avoid png.: '
         '<a href="https://ravi-sanrakshan.github.io/AgriFusion-Wiki-Calc/" target="_blank" style="color:#2E7D32; text-decoration:none; font-weight:bold;">AgriFusion Wiki-Calc</a></p>'
         '</div>',
         unsafe_allow_html=True
